@@ -1,0 +1,127 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#080e1c;
+    --text-color:#fff;
+}
+.white-theme{
+    --bg-color:#fff;
+    --text-color:#080e1c;
+}
+.hero{
+    background-color: var(--bg-color);
+    height: 100vh;
+    overflow: hidden;
+}
+.hero header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.hero header nav .logo{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+.hero header nav .logo span{
+    color: #23a3fe;
+}
+.hero header nav .nav-links a{
+    color: var(--text-color);
+    font-size: 25px;
+    margin: 0 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+.hero header nav .nav-links a:hover{
+    color: #23a3fe;
+}
+.hero header nav .btn-mood{
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+.hero .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.hero .container .div-text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.hero .container .div-img{
+    position: absolute;
+    width: 35%;
+    bottom: -5px;
+    margin-right: 50px;
+}
+.hero .container .div-img img{
+    width: 100%;
+}
+.hero .container .div-text h4{
+    color: #888;
+    font-size: 25px;
+}
+.hero .container .div-text h1{
+    color: var(--text-color);
+    font-size: 60px;
+    margin: 15px 0 10px;
+}
+.hero .container .div-text span{
+    color: #23a3fe;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hero .container .div-text p{
+    color: var(--text-color);
+    line-height: 2;
+    margin: 20px 0px 40px;
+
+}
+.hero .container .div-text .btn{
+    color: var(--text-color);
+    background-color: #23a3fe;
+    padding: 15px 30px;
+    border:1px soli #23a3fe ;
+    position: relative;
+    top: 0;
+    transition: .3s;
+
+}
+.hero .container .div-text .btn:hover{
+   top: -8px;
+   box-shadow: 0 0 15px #23a3fe;
+}
+.social-icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social-icons a{
+    color: #23a3fe;
+    font-size: 25px;
+    transition: .3s;
+}
+.social-icons a:hover{
+    transform: scale(1.4);
+}
